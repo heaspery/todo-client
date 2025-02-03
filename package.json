@@ -1,0 +1,25 @@
+{
+  "name": "todo_client_starter",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heaspery/todo-client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heaspery/todo-client/issues"
+  },
+  "homepage": "https://github.com/heaspery/todo-client#readme",
+  "description": "",
+  "devDependencies": {
+    "vite": "^6.0.11"
+  }
+}
