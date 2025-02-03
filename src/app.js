@@ -240,6 +240,7 @@ todoButton.addEventListener("click", async (e)=> {
     const data = await rep.json();
     displayMessage(data.message);
     await displayToDos();
+    todoForm.reset();
 
   } catch (e) {
     console.log(e);
@@ -258,7 +259,7 @@ ul.addEventListener("click", async (e)=> {
 
 
     try {
-
+      const todoForm = document.querySelector("form[name='todo']");
       const rep = await fetch(`https://progweb-todo-api.onrender.com/todos/${id}`, 
       {
         method: 'DELETE',
@@ -267,7 +268,6 @@ ul.addEventListener("click", async (e)=> {
         }
       });
       
-      todoForm.reset();
       const data = await rep.json();
       displayMessage(data.message);
       await displayToDos();
